@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css" />
+    <script src="index.js"></script>
+</head>
+
+<body class="portafolio" id="color" onload="main()">
+    <ul>
+        <li><a href="index.html">Perfil Profesional</a></li>
+        <li><a href="experiencia.html">Experiencia Laboral</a></li>
+        <li><a href="refpersonales.html">Referencias Personales</a></li>
+        <li><a href="reffamiliares.html">Referencias Familiares</a></li>
+        <li><a href="estudios.html">Estudios realizados</a></li>
+        <li><a href="taller1.html">Portafolio</a></li>
+    </ul>
+
+    <a href="taller3Java.html" class="portafolio-btn">VER CÓDIGO EN JAVA</a>
+    <h1 class="contentprincipal">Taller #3 - Ciclos - Java</h1>
+
+    <div class="dropdownportafolio">
+        <button class="dropdownportafolio-btn">TALLERES PORTAFOLIO &#x25bc</button>
+        <div class="dropdownportafolio-content">
+            <li><a href="taller1.html">Taller #1 - Variables e impresión</a></li>
+            <li><a href="taller2.html">Taller #2 - Condicionales</a></li>
+            <li><a href="taller3.html">Taller #3 - Ciclos</a></li>
+            <li><a href="taller4.html">Taller #4 - Arreglos</a></li>
+        </div>
+    </div>
+
+    <div class="contentprincipalportafolio">
+        <div class="contentportafolio">
+            <p class="tituloportafolio">1. Realizar la siguiente figura por medio del ciclo Para </p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+                                    *
+                                    **
+                                    ***
+                                    ****
+                                    *****
+                                    ******
+                                    *******
+                                    ********
+                                    *********
+                                    **********
+
+
+                    package com.mycompany.taller3;
+
+                    import java.util.Scanner;
+                    
+                    /**
+                     *
+                     * @author user
+                     */
+                    public class Taller3_P1 {
+                    
+                        public static void main(String[] args) {
+                            for (int i = 0; i <= 10; i++) {
+                                for (int j = 0; j < i; j++) {
+                                    System.out.print("*");
+                                }
+                                System.out.println(" ");
+                            }
+                        }
+                    }
+            
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">2. Realizar la siguiente figura por medio del ciclo Mientras - Hacer</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+
+                                             *
+                                            **
+                                           ***
+                                          ****
+                                         *****
+                                        ******
+                                       *******
+                                      ********
+                                     *********
+                                    **********
+
+                            package com.mycompany.taller3;
+
+                            /**
+                             *
+                            * @author user
+                            */
+                            public class Taller3_P2 {
+                                    
+                                public static void main(String[] args) {
+                                int i = 10;
+                                    
+                                while (i > 0) {
+                                    i--;
+                                    int j = 1;
+                                        while (j <= i + 1) {
+                                            j++;
+                                            System.out.print(" ");
+                                        }
+                                        int k = 1;
+                                        while (k < 11 - i) {
+                                            k++;
+                                            System.out.print("*");
+                                        }
+                                            System.out.println(" ");
+                                        }
+                                    }
+                                    
+                                }
+                    
+
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">3. Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+
+
+                                       *
+                                      ***
+                                     *****
+                                    *******
+                                   *********
+                                  ***********
+                                 *************
+                                ***************
+                               *****************
+                              *******************
+                             *********************
+                                      ***
+                                      ***
+                                     *****
+                                    *******
+                        
+
+                                    package com.mycompany.taller3;
+
+                                    /**
+                                     *
+                                     * @author user
+                                     */
+                                    public class Taller3_P3 {
+                                    
+                                        public static void main(String[] args) {
+                                            int i = 22;
+                                            do {
+                                                i = i - 2;
+                                                int j = 1;
+                                                do {
+                                                    j = j + 2;
+                                                    System.out.print(" ");
+                                                } while (j <= i + 1);
+                                                int k = 1;
+                                                do {
+                                                    System.out.print("*");
+                                                    k = k + 1;
+                                                } while (k < 22 - i);
+                                                System.out.println(" ");
+                                            } while (i > 0);
+                                    
+                                            int l = 10;
+                                            int p = 1;
+                                    
+                                            do {
+                                                l = l - 2;
+                                                int m = 1;
+                                                if (l <= 2) {
+                                                    do {
+                                                        m = m + 2;
+                                                        System.out.print(" ");
+                                                    } while (m <= l + 14);
+                                                    int n = 1;
+                                                    do {
+                                                        n = n + 2;
+                                                        System.out.print("*");
+                                                    } while (n < 13 - l);
+                                                    System.out.println(" ");
+                                                }else{
+                                                    do {
+                                                        System.out.print(" ");     
+                                                        m=m+1;
+                                                    } while (m<=9);
+                                                    int n=1;
+                                                    do {
+                                                        n = n+2;
+                                                        System.out.print("*");
+                                                    } while (n<8-(p+1));
+                                                    System.out.println(" ");
+                                                }
+                                                l=l-1;
+                                            } while (l > 0);
+                                        }
+                                    }
+
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">4. Se requiere un programa que pueda crear la tabla de multiplicar del número
+                que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el
+                usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+                                       1 X 5 = 5
+                                       2 X 5 = 10
+                                       3 X 5 = 15
+                                       4 X 5 = 20
+                                       5 X 5 = 25
+                                       6 X 5 = 30
+                                       7 X 5 = 35
+                                       8 X 5 = 40
+                                       9 X 5 = 45
+                                       10 X 5 = 50
+
+
+                                       package com.mycompany.taller3;
+
+                                       import java.util.Scanner;
+                                       
+                                       /**
+                                        *
+                                        * @author user
+                                        */
+                                       public class Taller3_P4 {
+                                       
+                                           public static void main(String[] args) {
+                                               Scanner input = new Scanner(System.in);
+                                               System.out.println("Digita el número de la tabla de multiplicar que deseas crear: ");
+                                               int n = input.nextInt();
+                                               
+                                               for (int i = 1; i <= 10; i++) {
+                                                   System.out.println(i + " * " + n + " = " + i * n);
+                                       
+                                               }
+                                       
+                                           }
+                                       
+                                       }
+                    
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">5. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita
+                hasta que el usuario desee terminar dicho ciclo.</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+                                    Menú de usuario
+                                    1. Captura nombre
+                                    2. Saludar persona
+                                    3. Salir del sistema
+
+
+
+                                    package com.mycompany.taller3;
+
+                                    import java.util.Scanner;
+                                    
+                                    /**
+                                     *
+                                     * @author user
+                                     */
+                                    public class Taller3_P5 {
+                                    
+                                        public static void main(String[] args) {
+                                            Scanner input = new Scanner(System.in);
+                                            boolean salir = true;
+                                            while (salir == true) {
+                                                System.out.println("MENÚ DE USUARIO");
+                                                System.out.println("1. Captura nombre");
+                                                System.out.println("2. Saludar persona");
+                                                System.out.println("3. Salir del sistema");
+                                                int opcion = input.nextInt();
+                                                input.nextLine();
+                                                
+                                                switch (opcion) {
+                                                    case 1:
+                                                        System.out.println("Digita tu nombre");
+                                                        String nombre = input.nextLine();
+                                                        break;
+                                                    case 2:
+                                                        System.out.println("Digita tu nombre");
+                                                        nombre = input.nextLine();
+                                                        System.out.println("Hola "+nombre+ "!");
+                                                        break;
+                                                    case 3:
+                                                        salir = false;
+                                                        break;
+                                                    default:
+                                                        System.out.println("La opción no es válida");
+                                                }
+                                            }
+                                        }
+                                    
+                                    }
+                    
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">6. Se está creando una aplicación que va a estar conectada con un prototipo que
+                permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre
+                completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando
+                que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo
+                requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+                                    
+                        package com.mycompany.taller3;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller3_P6 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                boolean salir = true;
+                                String nombreUno = " ";
+                                String telefonoUno = " ";
+                                String organizacionUno = " ";
+                                String nombreDos = " ";
+                                String telefonoDos = " ";
+                                String organizacionDos = " ";
+                                String nombreTres = " ";
+                                String telefonoTres = " ";
+                                String organizacionTres = " ";
+                        
+                                while (salir == true) {
+                                    System.out.println("CONTACTOS TELEFÓNICOS");
+                                    System.out.println("1. Almacenar contactos");
+                                    System.out.println("2. Verificar que el número no esté almacenado");
+                                    System.out.println("3. Buscar contactos almacenados");
+                                    System.out.println("4. Eliminar contactos");
+                                    System.out.println("5. Salir del sistema");
+                                    int opcion = input.nextInt();
+                                    input.nextLine();
+                        
+                                    switch (opcion) {
+                                        case 1:
+                                            int i = 0;
+                                            while (i <= 3) {
+                                                System.out.println("ALMACENAR CONTACTOS");
+                                                System.out.println("Digite el nombre");
+                                                System.out.println("Digite el telefono");
+                                                System.out.println("Digite la organización");
+                                                i++;
+                        
+                                                if (i == 1) {
+                                                    nombreUno = input.nextLine();
+                                                    telefonoUno = input.nextLine();
+                                                    organizacionUno = input.nextLine();
+                                                } else if (i == 2) {
+                                                    nombreDos = input.nextLine();
+                                                    telefonoDos = input.nextLine();
+                                                    organizacionDos = input.nextLine();
+                                                } else if (i == 3) {
+                                                    nombreTres = input.nextLine();
+                                                    telefonoTres = input.nextLine();
+                                                    organizacionTres = input.nextLine();
+                                                }
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("Verificacion");
+                                         
+                                                if (telefonoUno.toLowerCase().equals(telefonoDos)) {
+                                                    System.out.println("El telefono de " + nombreUno + " y el de " + nombreDos + " estan repetidos");
+                        
+                                                } else if (telefonoUno.toLowerCase().equals(telefonoTres)) {
+                                                    System.out.println("El telefono de " + nombreUno + " y el de " + nombreUno + " estan repetidos");
+                        
+                                                } else if (telefonoDos.toLowerCase().equals(telefonoTres)) {
+                                                    System.out.println("El telefono de " + nombreDos + " y el de " + nombreTres + " estan repetidos");
+                        
+                                                } else {
+                                                    System.out.println("Ningún telefono se encuentra repetido");
+                                                }
+                                            break;
+                                        case 3:
+                                            System.out.println("CONTACTOS ALMACENADOS");
+                                            System.out.println(":::::::::: CONTACTO 1 ::::::::::");
+                                            System.out.println(nombreUno);
+                                            System.out.println(telefonoUno);
+                                            System.out.println(organizacionUno);
+                        
+                                            System.out.println(":::::::::: CONTACTO 2 ::::::::::");
+                                            System.out.println(nombreDos);
+                                            System.out.println(telefonoDos);
+                                            System.out.println(organizacionDos);
+                        
+                                            System.out.println(":::::::::: CONTACTO 3 ::::::::::");
+                                            System.out.println(nombreTres);
+                                            System.out.println(telefonoTres);
+                                            System.out.println(organizacionTres);
+                                            break;
+                                        case 4:
+                                            System.out.println("Digite el numero del contacto desea eliminar");
+                                            System.out.println("1." + nombreUno);
+                                            System.out.println("2." + nombreDos);
+                                            System.out.println("3." + nombreTres);
+                                            int opcionDos = input.nextInt();
+                                            switch (opcionDos) {
+                                                case 1:
+                                                    nombreUno = " ";
+                                                    telefonoUno = " ";
+                                                    organizacionUno = " ";
+                        
+                                                    System.out.println("El contacto de la opción 1 fue eliminado correctamente");
+                                                    break;
+                                                case 2:
+                                                    nombreDos = " ";
+                                                    telefonoDos = " ";
+                                                    organizacionDos = " ";
+                        
+                                                    System.out.println("El contacto de la opción 2 fue eliminado correctamente");
+                                                    break;
+                                                case 3:
+                                                    nombreTres = " ";
+                                                    telefonoTres = " ";
+                                                    organizacionTres = " ";
+                                                    
+                                                    System.out.println("El contacto de la opción 3 fue eliminado correctamente");
+                                                    break;
+                                                default:
+                                                    System.out.println("La opción no es válida");
+                                            }
+                                            break;
+                                        case 5:
+                                            System.out.println("Has salido del sistema!");
+                                            salir=false;
+                                            break;
+                                        default:
+                                            System.out.println("La opción no es válida");
+                                    }
+                        
+                                }
+                            }
+                        
+                        }
+                    
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno
+                para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan
+                en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y
+                marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe
+                permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se
+                encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique.
+                Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+
+                        package com.mycompany.taller3;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller3_P7 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                boolean salir = true;
+                                String nombreUno = " ";
+                                String telefonoUno = " ";
+                                String placaUno = " ";
+                                String marcaUno = " ";
+                                String nombreDos = " ";
+                                String telefonoDos = " ";
+                                String placaDos = " ";
+                                String marcaDos = " ";
+                                String nombreTres = " ";
+                                String telefonoTres = " ";
+                                String placaTres = " ";
+                                String marcaTres = " ";
+                                String nombreCuatro = " ";
+                                String telefonoCuatro = " ";
+                                String placaCuatro = " ";
+                                String marcaCuatro = " ";
+                                String nombreCinco = " ";
+                                String telefonoCinco = " ";
+                                String placaCinco = " ";
+                                String marcaCinco = " ";
+                                String placa = " ";
+                        
+                                while (salir == true) {
+                                    System.out.println("CONTACTOS TELEFÓNICOS");
+                                    System.out.println("1. Ingresar al parqueadero");
+                                    System.out.println("2. Retirar del paqueadero");
+                                    System.out.println("3. Consultar si un vehiculo se encuentra en el parqueadero");
+                                    System.out.println("4. Salir del sistema");
+                                    int opcion = input.nextInt();
+                                    input.nextLine();
+                        
+                                    switch (opcion) {
+                                        case 1:
+                                            int i = 0;
+                                            while (i <= 5) {
+                                                System.out.println("ALMACENAR CONTACTOS");
+                                                System.out.println("Digite la placa del vehículo");
+                                                System.out.println("Digite la marca del vehículo");
+                                                System.out.println("Digite el nombre del cliente");
+                                                System.out.println("Digite el teléfono del cliente");
+                                                i++;
+                                                if (i == 1) {
+                                                    placaUno = input.nextLine();
+                                                    marcaUno = input.nextLine();
+                                                    nombreUno = input.nextLine();
+                                                    telefonoUno = input.nextLine();
+                                                } else if (i == 2) {
+                                                    placaDos = input.nextLine();
+                                                    marcaDos = input.nextLine();
+                                                    nombreDos = input.nextLine();
+                                                    telefonoDos = input.nextLine();
+                                                } else if (i == 3) {
+                                                    placaTres = input.nextLine();
+                                                    marcaTres = input.nextLine();
+                                                    nombreTres = input.nextLine();
+                                                    telefonoTres = input.nextLine();
+                                                } else if (i == 4) {
+                                                    placaCuatro = input.nextLine();
+                                                    marcaCuatro = input.nextLine();
+                                                    nombreCuatro = input.nextLine();
+                                                    telefonoCuatro = input.nextLine();
+                                                } else if (i == 5) {
+                                                    placaCinco = input.nextLine();
+                                                    marcaCinco = input.nextLine();
+                                                    nombreCinco = input.nextLine();
+                                                    telefonoCinco = input.nextLine();
+                                                }
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("Retirar");
+                                            System.out.println("Escoja de 1 a 5 de acuerdo a la placa, el vehículo que desea retirar");
+                                            System.out.println("1. " + placaUno);
+                                            System.out.println("2. " + placaDos);
+                                            System.out.println("3. " + placaTres);
+                                            System.out.println("4. " + placaCuatro);
+                                            System.out.println("5. " + placaCinco);
+                                            int opcionDos = input.nextInt();
+                                            input.nextLine();
+                        
+                                            switch (opcionDos) {
+                                                case 1:
+                                                    nombreUno = " ";
+                                                    telefonoUno = " ";
+                                                    placaUno = " ";
+                                                    marcaUno = " ";
+                        
+                                                    System.out.println("Su vehículo fué retirado exitosamente");
+                                                    break;
+                                                case 2:
+                                                    nombreDos = " ";
+                                                    telefonoDos = " ";
+                                                    placaDos = " ";
+                                                    marcaDos = " ";
+                        
+                                                    System.out.println("Su vehículo fué retirado exitosamente");
+                                                    break;
+                                                case 3:
+                                                    nombreTres = " ";
+                                                    telefonoTres = " ";
+                                                    placaTres = " ";
+                                                    marcaTres = " ";
+                        
+                                                    System.out.println("Su vehículo fué retirado exitosamente");
+                                                    break;
+                                                case 4:
+                                                    nombreCuatro = " ";
+                                                    telefonoCuatro = " ";
+                                                    placaCuatro = " ";
+                                                    marcaCuatro = " ";
+                        
+                                                    System.out.println("Su vehículo fué retirado exitosamente");
+                                                    break;
+                                                case 5:
+                                                    nombreCinco = " ";
+                                                    telefonoCinco = " ";
+                                                    placaCinco = " ";
+                                                    marcaCinco = " ";
+                        
+                                                    System.out.println("Su vehículo fué retirado exitosamente");
+                                                    break;
+                                                default:
+                                                    System.out.println("La opción no es válida");
+                                            }
+                                            break;
+                                        case 3:
+                                            System.out.println("CONSULTA SI UN VEHÍCULO SE ENCUENTRA EN EL PAQUEADERO");
+                                            System.out.println("Escriba el numero de la placa que desea consultar");
+                                            placa = input.nextLine();
+                        
+                                            if (placa.toLowerCase().equals(placaUno)) {
+                                                System.out.println("El velículo de placa " + placaUno + " marca " + marcaUno + " perneciente a " + nombreUno + " se encuentra registrado en el parqueadero");
+                                            } else if (placa.toLowerCase().equals(placaDos)) {
+                                                System.out.println("El velículo de placa " + placaDos + " marca " + marcaDos + " perneciente a " + nombreDos + " se encuentra registrado en el parqueadero");
+                                            } else if (placa.toLowerCase().equals(placaTres)) {
+                                                System.out.println("El velículo de placa " + placaTres + " marca " + marcaTres + " perneciente a " + nombreTres + " se encuentra registrado en el parqueadero");
+                                            } else if (placa.toLowerCase().equals(placaCuatro)) {
+                                                System.out.println("El velículo de placa " + placaCuatro + " marca " + marcaCuatro + " perneciente a " + nombreCuatro + " se encuentra registrado en el parqueadero");
+                                            } else if (placa.toLowerCase().equals(placaCinco)) {
+                                                System.out.println("El velículo de placa " + placaCinco + " marca " + marcaCinco + " perneciente a " + nombreCinco + " se encuentra registrado en el parqueadero");
+                                            } else {
+                                                System.out.println("El vehículo no se encuentra registrado en el parqueadero");
+                                            }
+                                            break;
+                                        case 4:
+                                            System.out.println("Has salido del sistema!");
+                                            salir = false;
+                                            break;
+                                        default:
+                                            System.out.println("La opción no es válida");
+                                    }
+                                }
+                            }
+                        
+                        }
+                    
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">8. La escuela automovilística "El Maestro" requiere una aplicación que permita
+                registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado
+                para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir
+                registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la
+                prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así
+                lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su
+                totalidad.</p>
+            <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+                        package com.mycompany.taller3;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller3_P8 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                boolean salir = true;
+                                String nombreUno = " ";
+                                String resultadoUno = "Aprobado";
+                                String nombreDos = " ";
+                                String resultadoDos = "Reprobado";
+                                String nombreTres = " ";
+                                String resultadoTres = "Aprobado";
+                                String nombreCuatro = "";
+                                String resultadoCuatro = "Aprobado";
+                                String nombreCinco = " ";
+                                String resultadoCinco = "Aprobado ";
+                                String nombreSeis = " ";
+                                String resultadoSeis = "Reprobado";
+                                String nombreSiete = " ";
+                                String resultadoSiete = "Aprobado";
+                                String nombreOcho = " ";
+                                String resultadoOcho = "Aprobado";
+                                String nombre = " ";
+                        
+                                while (salir == true) {
+                                    System.out.println("Bienvenido a la escuela El Maestro");
+                                    System.out.println("1. Registrar su ingreso al curso");
+                                    System.out.println("2. Consultar usuarios que hayan presentado el curso");
+                                    System.out.println("3. Resultados de las pruebas del curso");
+                                    System.out.println("4. Salir del sistema");
+                                    int opcion = input.nextInt();
+                                    input.nextLine();
+                        
+                                    switch (opcion) {
+                                        case 1:
+                                            int i = 0;
+                                            while (i <= 8) {
+                                                System.out.println("REGISTRAR SU INGRESO AL CURSO");
+                                                System.out.println("Digite su nombre");
+                                                i++;
+                        
+                                                if (i == 1) {
+                                                    nombreUno = input.nextLine();
+                                                } else if (i == 2) {
+                                                    nombreDos = input.nextLine();
+                                                } else if (i == 3) {
+                                                    nombreTres = input.nextLine();
+                                                } else if (i == 4) {
+                                                    nombreCuatro = input.nextLine();
+                                                } else if (i == 5) {
+                                                    nombreCinco = input.nextLine();
+                                                } else if (i == 6) {
+                                                    nombreSeis = input.nextLine();
+                                                } else if (i == 7) {
+                                                    nombreSiete = input.nextLine();
+                                                } else if (i == 8) {
+                                                    nombreOcho = input.nextLine();
+                                                }
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("USUARIOS QUE PRESENTARON EL CURSO");
+                                            System.out.println(nombreUno);
+                                            System.out.println(nombreDos);
+                                            System.out.println(nombreTres);
+                                            System.out.println(nombreCuatro);
+                                            System.out.println(nombreCinco);
+                                            System.out.println(nombreSeis);
+                                            System.out.println(nombreSiete);
+                                            System.out.println(nombreOcho);
+                                            break;
+                                        case 3:
+                                            System.out.println("RESULTADOS DE LAS PRUEBAS");
+                                            System.out.println("Digite el nombre del usuario que desea consultar");
+                                            nombre = input.nextLine();
+                        
+                                            if (nombre.toLowerCase().equals(nombreUno)) {
+                                                System.out.println("Para el usuario " + nombreUno + " el resultado de la prueba fué " + resultadoUno);
+                                            } else if (nombre.toLowerCase().equals(nombreDos)) {
+                                                System.out.println("Para el usuario " + nombreDos + " el resultado de la prueba fué " + resultadoDos);
+                                            } else if (nombre.toLowerCase().equals(nombreTres)) {
+                                                System.out.println("Para el usuario " + nombreTres + " el resultado de la prueba fué " + resultadoTres);
+                                            } else if (nombre.toLowerCase().equals(nombreCuatro)) {
+                                                System.out.println("Para el usuario " + nombreCuatro + " el resultado de la prueba fué " + resultadoCuatro);
+                                            } else if (nombre.toLowerCase().equals(nombreCinco)) {
+                                                System.out.println("Para el usuario " + nombreCinco + " el resultado de la prueba fué " + resultadoCinco);
+                                            } else if (nombre.toLowerCase().equals(nombreSeis)) {
+                                                System.out.println("Para el usuario " + nombreSeis + " el resultado de la prueba fué " + resultadoSeis);
+                                            } else if (nombre.toLowerCase().equals(nombreSiete)) {
+                                                System.out.println("Para el usuario " + nombreSiete + " el resultado de la prueba fué " + resultadoSiete);
+                                            } else if (nombre.toLowerCase().equals(nombreOcho)) {
+                                                System.out.println("Para el usuario " + nombreOcho + " el resultado de la prueba fué " + resultadoOcho);
+                                            }
+                                            break;
+                        
+                                        case 4:
+                                            System.out.println("Has salido del sistema!");
+                                            salir = false;
+                                            break;
+                                        default:
+                                            System.out.println("La opción no es válida");
+                                    }
+                                }
+                            }
+                    
+                    </code>
+                </Pre>
+        </div>
+    </div>
+</body>
+
+</html>

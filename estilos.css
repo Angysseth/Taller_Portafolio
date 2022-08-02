@@ -1,0 +1,468 @@
+.index {
+    background-color: #75373C;
+    color: #F5BCC1;
+    font-family: helvetica;
+    text-shadow: 1px 2px 2px black;
+    text-align: justify;
+}
+
+.portafolio{
+    background-color: #75373C;
+    color: #F5BCC1;
+    font-family: helvetica;
+    text-shadow: 1px 2px 2px black;
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 1200px;
+}
+
+
+.experiencia {
+    background-color: #75373C;
+    color: #F5BCC1;
+    font-family: helvetica;
+    text-shadow: 1px 2px 2px black;
+    margin-top: 160px;
+    border: 10px solid #974d53;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    border-radius: 8px;
+    margin-left: 300px;
+    width: 500px;
+}
+
+.contentexperiencia {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.refpersonales {
+    background-color: #75373C;
+    color: #F5BCC1;
+    font-family: helvetica;
+    text-shadow: 1px 2px 2px black;
+    margin-top: 160px;
+    border: 10px solid #974d53;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    border-radius: 8px;
+    margin-left: 300px;
+    width: 500px;
+}
+
+.contentrefpersonales {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.reffamiliares {
+    background-color: #75373C;
+    color: #F5BCC1;
+    font-family: helvetica;
+    text-shadow: 1px 2px 2px black;
+    margin-top: 160px;
+    border: 10px solid #974d53;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    border-radius: 8px;
+    margin-left: 300px;
+    width: 500px;
+}
+
+.contentreffamiliares {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.estudios {
+    background-color: #75373C;
+    color: #F5BCC1;
+    font-family: helvetica;
+    text-shadow: 1px 2px 2px black;
+    margin-top: 160px;
+    border: 10px solid #974d53;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    border-radius: 8px;
+    margin-left: 300px;
+    width: 500px;
+}
+
+.contentestudios {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #957275;
+}
+
+li {
+    float: left;
+    width: 1fr;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:active {
+    color: #75373C;
+    background-color: #F5BCC1;
+    text-shadow: 1px 1px 1px rgba(31, 30, 30, 0.87);
+}
+
+li:hover {
+    background-color: #C29599
+}
+
+.perfil {
+    margin-top: 160px;
+    margin-left: 300px;
+    width: 1024px;
+
+}
+
+img {
+    float: left;
+    border: 10px solid #974d53;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    border-radius: 8px;
+}
+
+img:hover {
+    opacity: 0.9;
+}
+
+.perfil-btn {
+    background-color: #957275;
+    border: #F5BCC1;  
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.perfil-btn a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.index h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenedortexto {
+    border: 10px solid #974d53;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    border-radius: 8px;
+    width: 640px;
+    height: 410px;
+}
+
+.contentper{
+    padding-left: 20px;
+    margin-left: 330px;
+    margin-right: 20px;
+}
+
+.contentprincipal{
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    text-align: center;
+}
+
+.contentprincipal .content{
+    margin: 0 0 2px;
+    padding: 6px;
+}
+
+.contentprincipal .titulo{
+    background-color: #4d1b1e;
+    margin: 0 0 6px;
+    padding: 6px;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    cursor: pointer;
+}
+
+.contentprincipal .contenido{
+    background-color: #974d53;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .7s ease;
+    text-align: justify;
+}
+
+.active + .contenido{
+    height: 100px;
+}
+
+.contentprincipal .contenidoreferencias{
+    background-color: #974d53;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .7s ease;
+    text-align: justify;
+}
+
+.active + .contenidoreferencias{
+    height: 40px;
+}
+
+.estilo1{
+    background-color: #612E5D;
+
+}
+
+.estilo1 .nav-bar {
+    background-color: #AD78AA;
+}
+
+.estilo1 .dropdown-btn{
+    background-color: #AD78AA;
+}
+
+.estilo1 img{
+    border: 10px solid #7a3a74;
+}
+
+.estilo1 .contenedortexto{
+    border: 10px solid #7a3a74;
+}
+
+.estilo2{
+    background-color: #2E3861;
+}
+
+.estilo2 .nav-bar {
+    background-color: #4467FA;
+}
+
+.estilo2 .dropdown-btn{
+    background-color: #4467FA;
+}
+
+.estilo2 img{
+    border: 10px solid #4e6eee;
+}
+
+.estilo2 .contenedortexto{
+    border: 10px solid #4e6eee;
+}
+
+.estilo3{
+    background-color: #61113A;
+}
+
+.estilo3 .nav-bar {
+    background-color: #a36579;
+}
+
+.estilo3 .dropdown-btn{
+    background-color: #a36579;
+}
+
+.estilo3 img{
+    border: 10px solid #771a4a;
+}
+
+.estilo3 .contenedortexto{
+    border: 10px solid #771a4a;
+}
+
+.dropdown-btn{
+    list-style-type: none;
+    margin: 0px;
+    border: 0ch;
+    padding:16px;
+    position: fixed;
+    top: 0;
+    width: 11%;
+    background-color: #957275;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-family: helvetica;
+    font-size: medium;
+    cursor: pointer;
+    margin-left: 1220px;
+    margin-right: 20px;
+}
+
+.dropdown-btn a:active {
+    color: #75373C;
+    background-color: #F5BCC1;
+    text-shadow: 1px 1px 1px rgba(31, 30, 30, 0.87);
+}
+
+.dropdown-btn:hover {
+    background-color: #C29599
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    background-color: #ecb1b6;
+    box-shadow: 0px 5px 5px rgb(41, 39, 39);
+    list-style-type: none;
+    margin: 50px;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    margin-left: 1220px;
+    margin-right: 70px;
+    width: 11%;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #e0a5a9;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* PORTAFOLIO */
+
+.dropdownportafolio-btn{
+    list-style-type: none;
+    margin: 0px;
+    border: 0ch;
+    padding:6px;
+    position: fixed;
+    width: 21%;
+    background-color: #957275;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-family: helvetica;
+    font-size: medium;
+    cursor: pointer;
+    top: 60px;
+    left: 9px;
+}
+
+.dropdownportafolio-btn a:active {
+    color: #75373C;
+    background-color: #F5BCC1;
+    text-shadow: 1px 1px 1px rgba(31, 30, 30, 0.87);
+}
+
+.dropdownportafolio-btn:hover {
+    background-color: #C29599
+}
+
+.dropdownportafolio{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownportafolio-content{
+    display: none;
+    background-color: #ecb1b6;
+    box-shadow: 0px 5px 5px rgb(41, 39, 39);
+    list-style-type: none;
+    padding: 25px;
+    position: fixed;
+    top: 90px;;
+    left: 9px;
+    width: 18%;
+    font-size: 14px;
+}
+
+.dropdownportafolio-content a{
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownportafolio-content a:hover{
+    background-color: #e0a5a9;
+}
+
+.dropdownportafolio:hover .dropdownportafolio-content{
+    display: block;
+}
+
+.contentprincipalportafolio{
+    text-align: left;
+}
+
+
+.contentprincipalportafolio .tituloportafolio{
+    background-color: #4d1b1e;
+    margin: 0 0 6px;
+    padding: 6px;
+    box-shadow: 2px 5px 5px rgb(41, 39, 39);
+    cursor: pointer;
+}
+
+.contentprincipalportafolio .contenidoportafolio{
+    background-color: #974d53;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .7s ease;
+    text-align: justify;
+}
+
+.active + .contenidoportafolio{
+    height: 1200px;
+}
+ 
+.portafolio-btn{
+    text-decoration: none;
+    margin: 0px;
+    border: 0ch;
+    padding:6px;
+    position: fixed;
+    width: 21%;
+    background-color: #957275;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-family: helvetica;
+    font-size: medium;
+    cursor: pointer;
+    top: 60px;
+    left: 950px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.portafolio-btn a:active {
+    color: #75373C;
+    background-color: #F5BCC1;
+    text-shadow: 1px 1px 1px rgba(31, 30, 30, 0.87);
+}
+
+.portafolio-btn:hover {
+    background-color: #C29599
+}

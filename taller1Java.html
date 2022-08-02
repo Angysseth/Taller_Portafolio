@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css" />
+    <script src="index.js"></script>
+</head>
+
+<body class="portafolio" id="color" onload="main()">
+    <ul>
+        <li><a href="index.html">Perfil Profesional</a></li>
+        <li><a href="experiencia.html">Experiencia Laboral</a></li>
+        <li><a href="refpersonales.html">Referencias Personales</a></li>
+        <li><a href="reffamiliares.html">Referencias Familiares</a></li>
+        <li><a href="estudios.html">Estudios realizados</a></li>
+        <li><a href="taller1.html">Portafolio</a></li>
+    </ul>
+
+    <a href="taller1Java.html" class="portafolio-btn">VER CÓDIGO EN JAVA</a>
+
+    <h1 class="contentprincipal">Taller #1 - Variables e impresión - Java</h1>
+
+    <div class="dropdownportafolio">
+        <button class="dropdownportafolio-btn">TALLERES PORTAFOLIO &#x25bc</button>
+        <div class="dropdownportafolio-content">
+            <li><a href="taller1.html">Taller #1 - Variables e impresión</a></li>
+            <li><a href="taller2.html">Taller #2 - Condicionales</a></li>
+            <li><a href="taller3.html">Taller #3 - Ciclos</a></li>
+            <li><a href="taller4.html">Taller #4 - Arreglos</a></li>
+        </div>
+    </div>
+    <div class="contentprincipalportafolio">
+        <div class="contentportafolio">
+            <p class="tituloportafolio">1. Realizar un programa el cual solicite su nombre y apellidos.</p>
+                <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+                        
+                        package com.mycompany.taller1;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller1_P1 {
+                        
+                            public static void main(String[] args) {
+                        
+                                Scanner input = new Scanner(System.in);
+                                System.out.println("Digita tu nombre");
+                                String nombre = input.nextLine();
+                        
+                                System.out.println("Digita tus apellidos");
+                                String apellidos = input.nextLine();
+                        
+                            }
+                        
+                        }
+                        
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">2. Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</p>
+                <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+                        
+                        package com.mycompany.taller1;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller1_P2 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                System.out.println("Digita tu nombre");
+                                String nombre = input.nextLine();
+                        
+                                System.out.println("Digita tus apellidos");
+                                String apellidos = input.nextLine();
+                        
+                                System.out.println("Digita tu edad");
+                                int edad = input.nextInt();
+                        
+                                System.out.println("Digita tu estatura");
+                                float estatura = input.nextFloat();
+                            }
+                        
+                        }
+                        
+
+
+                    </code>
+                </Pre>
+
+        </div>
+        <div class="contentportafolio">
+            <p class="tituloportafolio">3. Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].</p>
+                <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+                        
+	
+                        package com.mycompany.taller1;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller1_P3 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                System.out.println("Digita tu nombre");
+                                String nombre = input.nextLine();
+                        
+                                System.out.println("Digita tus apellidos");
+                                String apellidos = input.nextLine();
+                        
+                                System.out.println("Digita el nombre de tu mamá");
+                                String nombreMadre = input.nextLine();
+                        
+                                System.out.println("Digita los apellidos de tu mamá");
+                                String apellidosMadre = input.nextLine();
+                        
+                                System.out.println("Digita el nombre de tu papá");
+                                String nombrePadre = input.nextLine();
+                        
+                                System.out.println("Digita los apellidos de tu papá");
+                                String apellidosPadre = input.nextLine();
+                        
+                                System.out.println("Yo" + " " + nombre + " " + apellidos + ", soy hijo de " + nombreMadre + " " + apellidosMadre + " y " + nombrePadre + " " + apellidosPadre);
+                        
+                            }
+                        
+                        }
+                        
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">4. Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]</p>
+                <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+
+                        Package com.mycompany.taller1;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller1_P4 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                System.out.println("Digita el nombre de una ciudad capital");
+                                String capital = input.nextLine();
+                        
+                                System.out.println("Digita el país");
+                                String pais = input.nextLine();
+                        
+                                System.out.println("La ciudad " + capital + ", es la capital del país " + pais);
+                        
+                            }
+                        
+                        }
+	
+                    </code>
+                </Pre>
+        </div>
+
+        <div class="contentportafolio">
+            <p class="tituloportafolio">5. Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).</p>
+                <Pre class="contenidoportafolio">
+                    <code class="contenidoportafolio">
+	
+                        package com.mycompany.taller1;
+
+                        import java.util.Scanner;
+                        
+                        /**
+                         *
+                         * @author user
+                         */
+                        public class Taller1_P5 {
+                        
+                            public static void main(String[] args) {
+                                Scanner input = new Scanner(System.in);
+                                System.out.println("Digita tu nombre");
+                                String nombre = input.nextLine();
+                        
+                                System.out.println("Digita el nombre de tu mascota");
+                                String nombreMascota = input.nextLine();
+                        
+                                System.out.println("Digita el tipo de mascota que tienes");
+                                String tipoMascota = input.nextLine();
+                        
+                                System.out.println("Digita la edad de tu mascota");
+                                int edadMascota = input.nextInt();
+                        
+                                System.out.println(nombreMascota + " es un(a) " + tipoMascota + " el cual, tiene " + edadMascota + " años de edad y " + nombre + " es actualmente su dueño");
+                            }
+                        
+                        }
+                        
+                    </code>
+                </Pre>
+        </div>
+
+    </div>
+</body>
+
+</html>

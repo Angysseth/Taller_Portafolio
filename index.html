@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css" />
+    <script src="index.js"></script>
+
+</head>
+
+<body class="index" id="color" onload="main()">
+    <ul class="nav-bar">
+        <li><a href="index.html">Perfil Profesional</a></li>
+        <li><a href="experiencia.html">Experiencia Laboral</a></li>
+        <li><a href="refpersonales.html">Referencias Personales</a></li>
+        <li><a href="reffamiliares.html">Referencias Familiares</a></li>
+        <li><a href="estudios.html">Estudios realizados</a></li>
+        <li><a href="taller1.html">Portafolio</a></li>
+    </ul>
+
+    <div class="perfil">
+        <img width=320px height=410px src="Foto.jpg">
+        <div class="contenedortexto">
+            <h1 class="content">Angela Gysseth Guayabo Contreras</h1>
+            <p class="contentper">Ingeniero industrial y técnico en gestión empresarial con experiencia en el área
+                administrativa
+                gestionando actividades de elaboración y archivo de documentos, manejo de bases de datos,
+                elaboración y validación de indicadores de gestión. Con interés en desarrollo web y en aprender
+                nuevas tecnologías que permitan crear soluciones creativas y efectivas a grandes retos.
+            </p>
+            <button class="perfil-btn"><a
+                    href="https://drive.google.com/uc?id=1KOqH9EFY4494QFrQOoLzMtF7gtxGBFKi&export=download">Descarga
+                    PDF</a></button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-btn">Estilos &#x25bc</button>
+        <div class="dropdown-content">
+            <li><a href="#" onclick="cambiarColor1()">Estilo 1</a></li>
+            <li><a href="#" onclick="cambiarColor2()">Estilo 2</a></li>
+            <li><a href="#" onclick="cambiarColor3()">Estilo 3</a></li>
+            <li><a href="#" onclick="removerEstilo()">Remover</a></li>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
